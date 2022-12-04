@@ -1,5 +1,7 @@
 import { Command, Flags } from '@oclif/core';
 import { executeCommand } from '../shared/execute-command';
+import { getConfig } from '../shared/get-config';
+import { saveConfig } from '../shared/save-config';
 
 export default class Connect extends Command {
     static description = 'Connect to the server and begin a reverse tunnel';
@@ -39,10 +41,13 @@ export default class Connect extends Command {
     public async run(): Promise<void> {
         const { flags } = await this.parse(Connect);
 
-        await executeCommand(
-            `ssh -L ${flags.listenPort}:localhost:${flags.vaultPort} ${flags.username}@${flags.host} -p ${flags.port} -o StrictHostKeychecking=no`,
-            console.log,
-            console.error,
-        );
+        const command = `ssh -L ${flags.listenPort}:localhost:${flags.vaultPort} ${flags.username}@${flags.host} -p ${flags.port} -o StrictHostKeychecking=no`;
+
+        const config = await getConfig(this.config.configDir);
+        config.processes = config.processes || [];
+        config.processes.push(command);
+        await saveConfig(this.config.configDir, config);
+
+        await executeCommand(command, console.log, console.error);
     }
 }
