@@ -1,7 +1,7 @@
 import { Command, Flags } from '@oclif/core';
 import { executeCommand } from '../../shared/execute-command';
 import * as fs from 'fs-extra';
-import * as path from 'path';
+import * as path from 'node:path';
 
 export default class EnvDownload extends Command {
     static description = 'Download an environment file from the Vault server';
