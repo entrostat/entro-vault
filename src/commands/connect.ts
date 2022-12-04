@@ -48,6 +48,14 @@ export default class Connect extends Command {
         config.processes.push(command);
         await saveConfig(this.config.configDir, config);
 
+        this.log(`
+Creating the reverse bind now, when it is complete you can visit:
+
+http://localhost:${flags.listenPort}
+
+to access the Vault server.
+        `);
+
         await executeCommand(command, console.log, console.error);
     }
 }
