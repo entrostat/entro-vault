@@ -1,7 +1,7 @@
-oclif-hello-world
+entro-vault
 =================
 
-oclif example Hello World CLI
+A CLI to assist environment management using HashiCorp Vault and SSH tunnels for access.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
@@ -18,6 +18,16 @@ You'll also need `ssh` installed and your RSA key has to be added to the server.
 
 Finally, a user on Vault needs to be created with you and you need to be associated with the correct policies to gain access to the environment variables you require. Please speak to your system administrator if you have not been added to Vault yet.
 
+## Installation
+
+In order to provide this CLI to all users, we'll want to install it from the binaries provided. Download the `.tar.gz` file from the releases page.
+
+Then run the following to install:
+```bash
+tar -xvf entro-vault-<version>.tar.gz
+sudo mv entro-vault /usr/local/src/entro-vault
+sudo ln -s /usr/local/src/entro-vault/bin/entro-vault /usr/local/bin/entro-vault
+```
 
 # Usage
 <!-- usage -->
