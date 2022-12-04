@@ -72,7 +72,7 @@ export default class EnvUpload extends Command {
 
         await executeCommand(
             `export VAULT_ADDR=${flags.vault}; vault kv put ${
-                flags.secretPath
+                flags['secret-path']
             } ${keyValuePairs.join(' ')}`,
             () => {},
             console.error,
