@@ -46,14 +46,11 @@
     "dirname": "entro-vault",
     "commands": "./dist/commands",
     "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
+      "@oclif/plugin-help"
     ],
     "topicSeparator": " ",
     "topics": {
-      "hello": {
-        "description": "Say hello to the world and others"
-      }
+
     }
   },
   "scripts": {
@@ -73,7 +70,9 @@
   },
   "bugs": "https://github.com/entrostat/entro-vault/issues",
   "keywords": [
-    "oclif"
+    "oclif",
+    "vault",
+    "cli"
   ],
   "types": "dist/index.d.ts"
 }
