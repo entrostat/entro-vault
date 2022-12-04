@@ -1,6 +1,6 @@
 {
   "name": "entro-vault",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI to handle our vault infrastructure",
   "author": "Kerren Ortlepp @Kerren-Entrostat",
   "bin": {
@@ -49,9 +49,7 @@
       "@oclif/plugin-help"
     ],
     "topicSeparator": " ",
-    "topics": {
-
-    }
+    "topics": {}
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",

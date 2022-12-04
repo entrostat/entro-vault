@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/entrostat/entro-vault/compare/v1.0.1...v1.0.2) (2022-12-04)
+
+
+### Bug Fixes
+
+* **upload:** Changed the flag to secret-path but didn't use that in the code ([c8957c7](https://github.com/entrostat/entro-vault/commit/c8957c757e06dfbf18486e8f7a2d933f3d6ed12c))
+
 ### [1.0.1](https://github.com/entrostat/entro-vault/compare/v1.0.0...v1.0.1) (2022-12-04)
 
 
