@@ -25,6 +25,8 @@ In order to provide this CLI to all users, we'll want to install it from the bin
 Then run the following to install:
 ```bash
 tar -xvf entro-vault-<version>.tar.gz
+sudo rm -rf /usr/local/src/entro-vault
+sudo rm -rf /usr/local/bin/entro-vault
 sudo mv entro-vault /usr/local/src/entro-vault
 sudo ln -s /usr/local/src/entro-vault/bin/entro-vault /usr/local/bin/entro-vault
 ```
