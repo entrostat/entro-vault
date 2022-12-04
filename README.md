@@ -20,7 +20,7 @@ $ npm install -g entro-vault
 $ entro-vault COMMAND
 running command...
 $ entro-vault (--version)
-entro-vault/1.0.0 linux-x64 node-v16.15.0
+entro-vault/1.0.1 linux-x64 node-v16.15.0
 $ entro-vault --help [COMMAND]
 USAGE
   $ entro-vault COMMAND
@@ -66,7 +66,7 @@ EXAMPLES
   $ entro-vault connect --host=vault.example.com --username=example_user --port=2222
 ```
 
-_See code: [dist/commands/connect.ts](https://github.com/entrostat/entro-vault/blob/v1.0.0/dist/commands/connect.ts)_
+_See code: [dist/commands/connect.ts](https://github.com/entrostat/entro-vault/blob/v1.0.1/dist/commands/connect.ts)_
 
 ## `entro-vault disconnect`
 
@@ -83,7 +83,7 @@ EXAMPLES
   $ entro-vault disconnect
 ```
 
-_See code: [dist/commands/disconnect.ts](https://github.com/entrostat/entro-vault/blob/v1.0.0/dist/commands/disconnect.ts)_
+_See code: [dist/commands/disconnect.ts](https://github.com/entrostat/entro-vault/blob/v1.0.1/dist/commands/disconnect.ts)_
 
 ## `entro-vault env download PATH`
 
