@@ -9,14 +9,9 @@ export default class Disconnect extends Command {
 
     static examples = ['<%= config.bin %> <%= command.id %>'];
 
-    static flags = {
-        // flag with a value (-n, --name=VALUE)
-        name: Flags.string({ char: 'n', description: 'name to print' }),
-        // flag with no value (-f, --force)
-        force: Flags.boolean({ char: 'f' }),
-    };
+    static flags = {};
 
-    static args = [{ name: 'file' }];
+    static args = [];
 
     public async run(): Promise<void> {
         const config = await getConfig(this.config.configDir);

@@ -6,7 +6,9 @@ import * as path from 'node:path';
 export default class EnvDownload extends Command {
     static description = 'Download an environment file from the Vault server';
 
-    static examples = ['<%= config.bin %> <%= command.id %>'];
+    static examples = [
+        `<%= config.bin %> <%= command.id %> product:development/backend --output=devops/dev/backend/.env`,
+    ];
 
     static flags = {
         output: Flags.string({

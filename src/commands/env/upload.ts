@@ -7,7 +7,9 @@ export default class EnvUpload extends Command {
     static description =
         'Upload the contents of an environment file to the Vault server';
 
-    static examples = ['<%= config.bin %> <%= command.id %>'];
+    static examples = [
+        `<%= config.bin %> <%= command.id %> --secret-path=product:development/backend --yes devops/dev/backend/.env`,
+    ];
 
     static flags = {
         vault: Flags.string({
@@ -15,7 +17,7 @@ export default class EnvUpload extends Command {
             description: 'The hostname and path of the Vault server',
             default: 'http://localhost:33233',
         }),
-        secretPath: Flags.string({
+        'secret-path': Flags.string({
             char: 'p',
             description: 'The path to where the env should be stored on Vault',
             required: true,

@@ -6,7 +6,9 @@ import { saveConfig } from '../shared/save-config';
 export default class Connect extends Command {
     static description = 'Connect to the server and begin a reverse tunnel';
 
-    static examples = ['<%= config.bin %> <%= command.id %>'];
+    static examples = [
+        `<%= config.bin %> <%= command.id %> --host=vault.example.com --username=example_user --port=2222`,
+    ];
 
     static flags = {
         host: Flags.string({
