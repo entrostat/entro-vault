@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/entrostat/entro-vault/compare/v1.0.0...v1.0.1) (2022-12-04)
+
+
+### Bug Fixes
+
+* **devops:** Removed all of the workflows for Github ([df03806](https://github.com/entrostat/entro-vault/commit/df03806fc88cecab558c94a76aba39bf0d7c669b))
+
 ## 1.0.0 (2022-12-04)
 
 
