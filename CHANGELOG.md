@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+### [1.1.2](https://github.com/entrostat/entro-vault/compare/v1.1.1...v1.1.2) (2023-01-01)
+
+
+### Bug Fixes
+
+* **deps:** Updated all of the dependencies in the project ([c39a525](https://github.com/entrostat/entro-vault/commit/c39a525d718c884af10026c2d29505f54f59daec))
+
 ### [1.1.1](https://github.com/entrostat/entro-vault/compare/v1.1.0...v1.1.1) (2023-01-01)
 
 
