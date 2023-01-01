@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+### [1.1.3](https://github.com/entrostat/entro-vault/compare/v1.1.2...v1.1.3) (2023-01-01)
+
+
+### Bug Fixes
+
+* **devops:** Added the readme script ([616e6b6](https://github.com/entrostat/entro-vault/commit/616e6b64315128014c79aa1c781a2ab204587bb9))
+
 ### [1.1.2](https://github.com/entrostat/entro-vault/compare/v1.1.1...v1.1.2) (2023-01-01)
 
 
