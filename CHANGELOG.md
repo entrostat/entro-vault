@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+### [1.1.1](https://github.com/entrostat/entro-vault/compare/v1.1.0...v1.1.1) (2023-01-01)
+
+
+### Bug Fixes
+
+* **devops:** Updated the target-branch for dependabot ([1969383](https://github.com/entrostat/entro-vault/commit/19693837fd1d26f3905423c77c810d286a6b8342))
+
 ## [1.1.0](https://github.com/entrostat/entro-vault/compare/v1.0.2...v1.1.0) (2023-01-01)
 
 
