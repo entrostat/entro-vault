@@ -1,6 +1,6 @@
 {
   "name": "entro-vault",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A CLI to handle our vault infrastructure",
   "author": "Kerren Ortlepp @Kerren-Entrostat",
   "bin": {
@@ -20,16 +20,18 @@
     "@oclif/core": "^1.19.1",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.1.7",
-    "fs-extra": "^11.1.0"
+    "fs-extra": "^11.1.0",
+    "wait-on": "^7.0.1"
   },
   "devDependencies": {
     "@oclif/test": "^2.2.13",
     "@types/chai": "^4",
     "@types/fs-extra": "^9.0.13",
     "@types/mocha": "^9.0.0",
-    "@types/node": "^16.18.10",
+    "@types/node": "^16.18.4",
+    "@types/wait-on": "^5.3.1",
     "chai": "^4",
-    "entro-version": "^1.7.0",
+    "entro-version": "^3.0.0",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
     "eslint-config-oclif-typescript": "^1.0.3",
@@ -59,8 +61,8 @@
     "prepack": "yarn build && oclif manifest && oclif readme",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md",
-    "release": "entro-version --master-branch-name=main",
-    "release:major": "entro-version --master-branch-name=main --standard-version-flags=\"--release-as=major\"",
+    "release": "entro-version release --master-branch-name=main",
+    "release:major": "entro-version release --master-branch-name=main --standard-version-flags=\"--release-as=major\"",
     "build:tarballs": "oclif pack tarballs"
   },
   "engines": {

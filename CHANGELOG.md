@@ -1,6 +1,19 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [1.1.0](https://github.com/entrostat/entro-vault/compare/v1.0.2...v1.1.0) (2023-01-01)
+
+
+### Features
+
+* **wait:** Added the ability to wait for the port to open and then continue, this is cool for CI/CD pipelines ([bb0ea6d](https://github.com/entrostat/entro-vault/commit/bb0ea6d5fbd18a413442f216c45e1f8cf2231973))
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/plugin-help from 5.1.19 to 5.1.20 ([acf8381](https://github.com/entrostat/entro-vault/commit/acf8381f2b98ed79800bb4c82758be9d7fdd6bf2))
+* **devops:** Updated the version of entro-version ([86a74d1](https://github.com/entrostat/entro-vault/commit/86a74d12514eb02ba15f62c0dddc6b44935c55ff))
 
 ### [1.0.2](https://github.com/entrostat/entro-vault/compare/v1.0.1...v1.0.2) (2022-12-04)
 
