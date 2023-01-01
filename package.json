@@ -63,7 +63,7 @@
     "version": "oclif readme && git add README.md",
     "readme": "oclif readme",
     "release": "entro-version release --master-branch-name=main --during-release-post-hook=\"npm run readme && git commit -am 'Updated the readme'\"",
-    "release:major": "entro-version release --master-branch-name=main --standard-version-flags=\"--release-as=major\"",
+    "release:major": "entro-version release --master-branch-name=main --standard-version-flags=\"--release-as=major\" --during-release-post-hook=\"npm run readme && git commit -am 'Updated the readme'\"",
     "build:tarballs": "oclif pack tarballs"
   },
   "engines": {
