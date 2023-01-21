@@ -24,7 +24,7 @@
     "wait-on": "^7.0.1"
   },
   "devDependencies": {
-    "@oclif/test": "^2.2.19",
+    "@oclif/test": "^2.3.0",
     "@types/chai": "^4",
     "@types/fs-extra": "^9.0.13",
     "@types/mocha": "^10.0.1",
